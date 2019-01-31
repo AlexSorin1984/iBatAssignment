@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MainPack.AddGroupController"
+            prefHeight="150" prefWidth="210.0">
+    <VBox style="-fx-padding:10px">
+        <HBox style="-fx-padding:5px">
+            <Label minWidth="100" text="Enter group name: "/>
+            <TextField fx:id="groupNameTextField"/>
+        </HBox>
+        <HBox style="-fx-padding:5px">
+            <Button onAction="#saveGroup" text="Save group" />
+        </HBox>
+    </VBox>
+</AnchorPane>

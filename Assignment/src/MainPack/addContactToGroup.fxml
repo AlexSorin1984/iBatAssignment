@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MainPack.AddContactToGroupController"
+            minHeight="440.0" prefWidth="600.0">
+    <VBox alignment="CENTER">
+        <HBox style="-fx-padding:10px">
+            <Label style="-fx-font-size:14" text="Choose the group you want the contact to be added to." alignment="CENTER" />
+        </HBox>
+        <HBox style="-fx-padding:10px">
+            <ListView style="-fx-font-size:14; -fx-margin-left:40px;" fx:id="showGroupsListView" maxHeight="170" HBox.hgrow="ALWAYS" prefWidth="320" >
+
+            </ListView>
+        </HBox>
+        <HBox style="-fx-padding:10px">
+            <Button  fx:id="addContactToGroupButton" onAction="#addContactToGroup" text="Add contact to group" />
+        </HBox>
+
+
+    </VBox>
+
+</AnchorPane>

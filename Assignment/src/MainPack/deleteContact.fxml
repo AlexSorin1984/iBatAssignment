@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MainPack.DeleteContactController"
+            prefHeight="200.0" prefWidth="200.0">
+
+    <VBox style="-fx-padding:10px">
+        <HBox style="-fx-padding:5px">
+            <Label minWidth="100" text="Are you sure you want to delete this contact ?" style="-fx-font-size:14px"/>
+        </HBox>
+        <HBox style="-fx-padding:5px">
+            <Button onAction="#deleteContact" fx:id="deleteContactButton" text="DELETE"/>
+            <Label minWidth="100"/>
+            <Button onAction="#cancelDeleteContact" fx:id="cancelDeleteContactButton" text="CANCEL"/>
+        </HBox>
+
+    </VBox>
+
+
+</AnchorPane>
